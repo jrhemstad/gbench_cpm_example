@@ -21,12 +21,9 @@ CPMAddPackage(
   VERSION 1.4.1
   OPTIONS
     "BENCHMARK_ENABLE_TESTING Off"
+    "CMAKE_CXX_STANDARD 11"
 )
 
-if (benchmark_ADDED)
-  # patch google benchmark target
-  set_target_properties(benchmark PROPERTIES CXX_STANDARD 14)
-endif()
 
 # ---- Executable ----
 
